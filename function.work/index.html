@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: black;
+            color: black;
+        }
+    </style>
+    <script>
+        function hello(ism) {
+            console.log('Happy Birthday', ism)
+        }
+        hello("Aziz")
+        hello("Laziz")
+        hello("Salim")
+
+        function toliqIsm(ism, familiya) {
+            console.log('Ismingiz:', ism, 'Familiyangiz:', familiya)
+        }
+        toliqIsm('Aziz', 'Lazizov')
+
+
+
+        function qoshish(son1, son2) {
+            let natija = son1 + son2
+            console.log(natija)
+        }
+        qoshish(20, 20)
+
+        function kvadrat(son) {
+            console.log(son * son)
+        }
+
+        kvadrat(7)
+
+
+
+        function kalkulator(son1, son2, belgi) {
+            if (belgi === '+') console.log(son1 + son2)
+            else if (belgi === '-') console.log(son1 - son2)
+            else if (belgi === '/') console.log(son1 / son2)
+            else if (belgi === '*') console.log(son1 * son2)
+            else console.log(Xato)
+        }
+        kalkulator(10,20, "*")
+        kalkulator(100,5, "/")
+    </script>
+</body>
+
+</html>

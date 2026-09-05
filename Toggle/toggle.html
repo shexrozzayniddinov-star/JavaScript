@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .yoniq {
+            background: yellow;
+        }
+
+        .yashiriw {
+            display: none;
+        }
+
+        .katta {
+            font-size: 100px;
+        }
+
+        .yashil {
+            background: green !important;
+        }
+
+        .svetofor {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h2>1. Sehrli fonar</h2>
+
+    <button onclick="chiroq()">
+        Chiroqni yoq / ochir
+    </button>
+
+    <div id="fonar">
+        🔦
+    </div>
+
+
+
+    <h2>2. Korinmas odam</h2>
+
+    <div id="robot">
+        🤖
+    </div>
+
+    <button onclick="yashir()">
+        Korinmas bol
+    </button>
+
+
+
+    <h2>3. Muzqaymoq</h2>
+
+    <input id="tanga" type="number">
+
+    <button onclick="muzqaymoq()">
+        Sotib olish
+    </button>
+
+
+
+    <h2>4. Katta ayiqcha</h2>
+
+    <div id="lion">
+        🦁
+    </div>
+
+    <button onclick="lion()">
+        Kattalash!
+    </button>
+
+
+
+    <h2>5. Yurakcha</h2>
+
+    <div id="yurak">
+        ❤️
+    </div>
+
+    <button onclick="like()">
+        Yoqdi
+    </button>
+
+
+    <!-- 6 -->
+    <h2>6. Ismni aniqlash</h2>
+
+    <input id="ism" type="text">
+
+    <button onclick="salom()">
+        Jonatish
+    </button>
+
+    <h2>7. Svetofor</h2>
+
+    <div id="svetofor" class="svetofor"></div>
+
+    <button onclick="svetofor()">
+        Rangni ozgartir
+    </button>
+
+
+
+    <h2>8. Sirli quti</h2>
+
+    <div id="quti">
+        📦
+    </div>
+
+    <button onclick="sovga()">
+        Qutini och
+    </button>
+
+
+
+    <h2>9. Qadam hisoblagich</h2>
+
+    <button onclick="qadam()">
+        Qadam bosish
+    </button>
+
+
+
+    <h2>10. Salomlashuvchi tugma</h2>
+
+    <button id="tugma" onclick="tugma()">
+        Meni bos
+    </button>
+
+
+    <script>
+        function chiroq() {
+
+            document
+                .getElementById("fonar")
+                .classList
+                .toggle("yoniq");
+
+            console.log("Chiroq yoqildi yoki ochirildi");
+
+        }
+
+
+
+
+        function yashir() {
+
+            document
+                .getElementById("robot")
+                .classList
+                .toggle("yashirin");
+
+            console.log("Robot yashirildi yoki ko‘rsatildi");
+
+        }
+
+
+
+
+        function muzqaymoq() {
+
+            let tanga =
+                document.getElementById("tanga").value;
+
+            if (tanga >= 5) {
+
+                console.log(
+                    "Mazali muzqaymoq oldingiz! 🍦"
+                );
+
+            } else {
+
+                console.log(
+                    "Tangangiz yetmadi "
+                );
+
+            }
+
+        }
+
+
+
+
+        function ayiqcha() {
+
+            document
+                .getElementById("ayiq")
+                .classList
+                .toggle("katta");
+
+            console.log("Ayiqcha kattalashdi yoki kichraydi");
+
+        }
+
+
+
+
+        function like() {
+
+            let yurak =
+                document.getElementById("yurak");
+
+            if (yurak.textContent == "❤️") {
+
+                yurak.textContent = "❤️"
+
+                console.log("Yoqdi ❤️")
+
+            } else {
+
+                yurak.textContent = "❤️"
+
+                console.log("Like olib tashlandi ❤️")
+
+            }
+
+        }
+
+
+
+
+        function salom() {
+
+            let ism =
+                document.getElementById("ism").value
+
+            if (ism == "") {
+
+                console.log(
+                    "Ismingni yozishni unutting!"
+                )
+
+            } else {
+
+                console.log(
+                    "xuw kelibsz, " + ism + "!"
+                )
+
+            }
+
+        }
+
+
+
+
+        function svetofor() {
+            document
+                .getElementById("svetofor")
+                .classList
+                .toggle("yashil");
+
+            console.log("Svetofor rangi ozgardi")
+        }
+        document
+            .getElementById("svetofor")
+            .classList
+            .toggle("yashil");
+
+        console.log("Svetofor rangi ozgardi")
+
+
+
+
+
+
+        function sovga() {
+
+            document
+                .getElementById("quti")
+                .classList
+                .toggle("yashirin")
+
+            console.log(
+                "🎁 Ichida yangi oyinchoq bor!"
+            )
+
+        }
+
+
+
+
+        let son = 0;
+
+        function qadam() {
+
+            son = son + 1
+
+            console.log(son)
+
+        }
+
+
+
+
+        function tugma() {
+
+            document
+                .getElementById("tugma")
+                .textContent =
+                "Rahmat, meni bosding! 😊"
+
+            console.log(
+                "Rahmat meni bosding 😊"
+            )
+
+        }
+
+    </script>
+
+</body>
+</html>
